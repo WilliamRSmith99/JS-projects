@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wnameth=device-wnameth, initial-scale=1.0">
+    <title>Input Employee Availability</title>
+    <link rel="stylesheet" href="/Scheduling/style.css">
+    <style>
+        .slot{
+            
+            width: fit-content;
+            background-color: rgb(229, 229, 229);
+            color: rgb(229, 229, 229);
+        }
+    </style>
+     <script src="main.js"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/@viselect/vanilla/lib/viselect.cjs.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <form action="_submit">
+            <div class="container">            
+                
+            </div>
+            <div class="calendar selection-area" style= "display: flex; flex-direction: row; margin-top: 7em; justify-content: center;">
+                <div class="column" style= "display: flex; flex-direction: column; width: fit-content;padding-right: 1em;">
+                    <div class="container"><input type="text" placeholder="Employee Name" id='Name'><br></div>
+                    <div class = 'display' style='background-color:rgb(229, 229, 229); width:12em;height:22.5em; margin-top: 2.3rem;'>
+                        <h3 style='text-align: center;' ><u>Names</u></h3>
+                        <div style='text-align: center;' id='NamesHere'></div>
+                    </div>
+                </div>
+                <div class="column" style= "display: flex; flex-direction: column; width: fit-content;padding-right: 1em;">
+                    <h3>Times</h3>
+                    <br>8:00AM
+                    <br> --
+                    <br>9:00AM
+                    <br>--
+                    <br>10:00AM
+                    <br>--
+                    <br>11:00AM                                    
+                    <br>--
+                    <br>12:00AM
+                    <br>--
+                    <br>1:00PM
+                    <br>--
+                    <br>2:00PM
+                    <br>--
+                    <br>3:00PM
+                    <br>--
+                    <br>4:00PM
+                    <br>--
+                    <br>5:00PM
+                    <br>--
+                </div>
+                <div>
+                    <h3>Monday</h3>
+                    <div class="column selection-area" id='Monday' style="display: flex; flex-direction: column; width: fit-content; border: 1px solname black;">
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm1'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm2'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm3'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm4'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm5'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm6'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm7'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm8'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm9'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm10'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm11'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm12'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm13'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm14'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm15'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm16'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm17'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm18'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 'm19'>----------------</div>
+                    </div>
+                </div>           
+                <div>
+                    <h3>Tuesday</h3>
+                    <div class="column selection-area" id = 'Tuesday' style="display: flex; flex-direction: column; width: fit-content; border: 1px solname black;">
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't1'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't2'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't3'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't4'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't5'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't6'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't7'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't8'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't9'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't10'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't11'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't12'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't13'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't14'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't15'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't16'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't17'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't18'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = 't19'>----------------</div>
+                    </div>
+                </div>  
+                <div>
+                    
+                    <div class="column selection-area" id = 'Wednesday' style="display: flex; flex-direction: column; width: fit-content; border: 1px solname black;">
+                        <h3>Wednesday</h3>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '1'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '2'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '3'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '4'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '5'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '6'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '7'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '8'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '9'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '10'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '11'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '12'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '13'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '14'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '15'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '16'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '17'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '18'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '19'>----------------</div>
+                    </div>
+                </div>           
+                <div>
+                    
+                    <div class="column selection-area" id = 'Thursday' style="display: flex; flex-direction: column; width: fit-content; ">
+                        <h3>Thursday</h3>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '1'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '2'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '3'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '4'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '5'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '6'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '7'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '8'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '9'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '10'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '11'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '12'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '13'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '14'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '15'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '16'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '17'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '18'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '19'>----------------</div>
+                    </div>
+                </div>  
+                <div>
+                    <h3>Friday</h3>
+                    <div class="column selection-area" id = 'Friday' style="display: flex; flex-direction: column; width: fit-content; border: 1px solname black;">
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '1'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '2'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '3'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '4'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '5'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '6'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '7'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '8'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '9'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '10'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '11'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '12'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '13'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '14'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '15'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '16'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '17'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '18'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '19'>----------------</div>
+                    </div>
+                </div>  <div>
+                    <h3>Saturday</h3>
+                    <div class="column selection-area" id = 'Saturday' style="display: flex; flex-direction: column; width: fit-content; border: 1px solname black;">
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '1'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '2'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '3'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '4'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '5'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '6'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '7'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '8'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '9'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '10'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '11'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '12'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '13'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '14'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '15'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '16'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '17'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '18'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '19'>----------------</div>
+                    </div>
+                </div>  <div>
+                    <h3>Sunday</h3>
+                    <div class="column selection-area" id = 'Sunday' style="display: flex; flex-direction: column; width: fit-content; border: 1px solname black;">
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '1'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '2'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '3'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '4'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '5'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '6'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '7'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '8'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '9'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '10'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '11'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '12'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '13'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '14'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '15'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '16'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '17'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '18'>----------------</div>
+                        <div class="slot" onclick="Selector(this)" style='border: 1px solid black;padding: 0 .5em' name = '19'>----------------</div>
+                    </div>
+                </div>  
+            </div>
+            <div class="container"><input type="button" onclick = 'NewEntry()' value='New Entry'> </input>
+            <input type="button" onclick = 'main()' value='Generate Schedule'> </input>
+        </div>
+            
+        </form>
+    </div>
+</body>
+</html>

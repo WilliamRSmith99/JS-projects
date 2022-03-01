@@ -1,0 +1,15 @@
+.red{
+    background-color: red;
+    color: red;
+}
+
+.selection-area {
+    
+    user-select: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

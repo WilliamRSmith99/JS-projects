@@ -1,0 +1,33 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+svg:hover #cloud{
+    width: 90px;
+    animation: float;
+    animation-duration: 2s;
+    transform-style: preserve-3d;
+    animation-iteration-count: infinite;
+    background:rgb(189, 189, 189) ;
+}
+
+svg{
+    width: 300px;
+    margin-left: 500px;
+    margin-top: 200px;
+    
+    animation-direction: alternate;
+}
+
+@keyframes float {
+    from{
+        transform: translate(23%, 23%) translateY(27%) translateX(-18%);
+    }
+    to{
+        transform: translateY(43%);
+    }
+    
+}
